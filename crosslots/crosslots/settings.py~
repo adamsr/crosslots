@@ -113,8 +113,11 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
+# provide our get_profile() 
+AUTH_PROFILE_MODULE = 'clauth.CustomUser'
+
 INSTALLED_APPS = (
-    'django.contrib.auth',
+#    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
@@ -127,7 +130,7 @@ INSTALLED_APPS = (
     'polls',
     'county',
 	 'news',    
-	 'users',
+	 'clauth',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
