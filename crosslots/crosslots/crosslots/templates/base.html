@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+  
+  <link rel="stylesheet" type="text/css" href="http://crosslots.com/styles.css" />
+	{% block extrahead %}{% endblock %}
+    <title>Crosslots</title>
+  </head>
+  <body>
+<div id="fullpage">
+<div id="background">
+	{% block content %}
+	{% endblock %}
+</div>
+<div id="news">
+<div id="in_news">
+
+	{% block right %}
+	{% endblock %}
+
+</div>
+
+</div>
+<div id="topmenu">
+<div id="topmenu_2">
+<img src="http://crosslots.com/media/logo.png" alt="" class="logo" ></img>
+</div>
+</div>
+
+
+
+<div id="picinfo">
+</div>  
+
+
+
+</div>
+  </body>
+</html>

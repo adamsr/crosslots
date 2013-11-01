@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block right %}
+	<div id="newslist">
+		{% for news in news %}
+		{{news}}
+		{% endfor %}
+	</div>
+{% endblock %}

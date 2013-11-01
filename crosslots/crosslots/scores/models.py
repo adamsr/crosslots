@@ -1,0 +1,17 @@
+from django.db import models
+from organizations.models import Organizations
+from news.models import News
+
+
+# Create your models here.
+
+class Scores(models.Model):
+	news_scores = models.ManyToManyField(News)
+	org_scores = models.ManyToManyField(Organizations)
+	team_win		= models.CharField(max_length=200)
+	win_score	= models.CharField(max_length=5)
+	team_lose	= models.CharField(max_length=200)
+	lose_score	= models.CharField(max_length=5)
+	
+	def __unicode__(self):
+		return self.team_win

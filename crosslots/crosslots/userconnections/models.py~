@@ -1,0 +1,5 @@
+from django.db import models
+from organizations.models import Organizations
+from clauth.models import CustomUser
+
+# Create your models here.

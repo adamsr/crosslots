@@ -1,0 +1,9 @@
+from django.contrib import admin
+from scores.models import Scores
+
+
+
+class ScoresAdmin(admin.ModelAdmin):
+	prepopulated_fields = {'slug': ('team_win',"vs",'team_lose')}
+	search_fields = ['team_win','team_lose',]
+admin.site.register(Scores)
